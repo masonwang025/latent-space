@@ -35,6 +35,10 @@ app.get("/", function (req, res) {
   res.sendFile(path.join(public, "home.html"));
 });
 
+app.get("/demo", function (req, res) {
+  res.redirect("https://youtu.be/1GUb3c0IIh0");
+});
+
 app.get("/join/", function (req, res) {
   res.redirect("/");
 });
