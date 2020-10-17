@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap");
+
+* {
+  font-family: "Miriam Libre", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  font-size: 1.42em;
+}
+
+#waves-hero {
+  height: 76.9vh;
+  width: 100%;
+  background: rgb(0, 29, 56);
+  background: radial-gradient(
+    circle,
+    rgba(0, 29, 56, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.hero {
+  color: white;
+  margin-top: -76.9vh;
+  height: 76.9vh;
+  width: 100%;
+  background: #00132b50;
+}
+
+#waves-hero2 {
+  height: 100vh;
+  background: rgb(0, 29, 56);
+  background: radial-gradient(
+    circle,
+    rgba(0, 29, 56, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.hero2 {
+  color: white;
+  margin-top: -100vh;
+  height: 100vh;
+  width: 100%;
+  background: #00132b50;
+}
+
+@media screen and (max-height: 530px) and (orientation: landscape) {
+  #waves-hero {
+    height: 100vh;
+  }
+  .hero {
+    margin-top: -100vh;
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  #waves-hero {
+    height: 100vh;
+  }
+  .hero {
+    margin-top: -100vh;
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 1000px) and (min-height: 500px) {
+  #waves-hero {
+    height: 69vh;
+  }
+  .hero {
+    margin-top: -69vh;
+    height: 69vh;
+  }
+}
+@media screen and (max-height: 800px) and (max-width: 800px) {
+  #waves-hero {
+    height: 100vh;
+  }
+  .hero {
+    margin-top: -100vh;
+    height: 100vh;
+  }
+}
+
+.hero h1.display-1,
+.hero2 h1.display-1 {
+  line-height: 0.9em;
+  margin-bottom: 0.25em;
+}
+
+.hero h1, .hero h2 {
+  line-height: 0.95em;
+  margin-bottom: 0.25em;
+}
+
+#waves-hero canvas,
+#waves-hero2 canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  padding-top: 4.25em;
+  padding-bottom: 4.25em;
+}
+
+.section .title {
+  font-size: 2.69em;
+}
+
+.dashed-bottom {
+  border-bottom: 2px rgba(11, 71, 95, 0.42) dashed;
+}
+
+.section .title span {
+  background-image: linear-gradient(120deg, #00c2e9 0%, #00b8dd 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.3em;
+  background-position: 0 82.5%;
+}
+
+.alert-dark {
+  border: 0;
+  background-color: rgb(0, 29, 56);
+  color: white;
+  padding: 2.5em 2em;
+}
+
+.advantages ul li {
+  font-size: 1.2em;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+ul li:before {
+  content: "\00BB \0020";
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.advantages i {
+  color: #0096b4;
+}

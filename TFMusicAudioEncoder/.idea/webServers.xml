@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b5ef54ee-4478-43ba-a7d0-5d0051057cc0" name="Latent Space" url="http://34.122.73.138">
+        <fileTransfer rootFolder="/home/matt" accessType="SFTP" host="34.122.73.138" port="22" sshConfigId="2fb1557f-5467-4b15-aabd-cce7cd907027" sshConfig="matt@34.122.73.138:22 agent" authAgent="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

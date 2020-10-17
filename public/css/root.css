@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+  background: #f4f3f3;
+}
+
+img {
+  user-select: none;
+}
+
+button {
+  text-transform: none !important;
+}
+
+* {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+::-moz-selection {
+  background-color: #62cbdd66;
+}
+::selection {
+  background-color: #62cbdd66;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #3a3a3d;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5a9fac;
+  transition: all 0.55s ease;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5aaebe;
+}
+
+a,
+button {
+  text-decoration: none;
+  outline: none !important;
+  cursor: default;
+  @media screen and (max-height: 540px) and (orientation: landscape) {
+    cursor: default;
+  }
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.underline-effect {
+  background-image: linear-gradient(120deg, #00a3c4dd 0%, #0092afdd 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.25em;
+  background-position: 0 80%;
+}
+
+.btn {
+  background-color: #18c8e7;
+  font-size: 1.1em;
+  box-shadow: 2.5px 2.5px #00000073;
+  padding: 0.5em 1em;
+}
+
+.btnInput {
+  background-color: #18c8e7;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #212529;
+  border: 0;
+}
+
+.inputText {
+  border: 0;
+  font-size: 1.2em;
+  padding: 1.4em 1em;
+  color: #212529;
+}
+
+.inputText:active, .inputText:focus {
+  border: 0;
+}
+
+.btn:hover, .btnInput:hover {
+  
+  background-color: #62cbdd;
+}
+
+
+.btn:focus,.btn:active {
+   outline: none !important;
+  box-shadow: 2.5px 2.5px #00000055;
+}
+
+.pulse {
+  box-shadow: 0 0 0 rgba(120, 120, 120, 0.4);
+  animation: pulse 2.1s infinite;
+}
+
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(120, 120, 120, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 15px rgba(120, 120, 120, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(120, 120, 120, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(120, 120, 120, 0.4);
+    box-shadow: 0 0 0 0 rgba(120, 120, 120, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(120, 120, 120, 0);
+    box-shadow: 0 0 0 15px rgba(120, 120, 120, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(120, 120, 120, 0);
+    box-shadow: 0 0 0 0 rgba(120, 120, 120, 0);
+  }
+}
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,  
+label:focus
+{
+    outline: 0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}

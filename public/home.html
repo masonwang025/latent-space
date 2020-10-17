@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="/assets/img/logo.png" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/root.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+
+    <title>Latent Space</title>
+    <meta
+      name="description"
+      content="Using recurrent neural autoencoders, Latent Space compresses audio streams with embeddings specifically for music, eliminating latency and allowing for smooth real-time virtual collaboration."
+    />
+    <script
+      src="https://kit.fontawesome.com/7593f939e5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="waves-hero"></div>
+    <div class="hero">
+      <div class="container h-100 text-center">
+        <div class="row h-100 align-items-center justify-content-center">
+          <div class="col">
+            <div class="mb-4">
+              <h1 class="display-1">
+                <b class="underline-effect">Latent Space</b>
+              </h1>
+              <h1>Minimizing audio latency with latent space.</h1>
+              <div class="container mt-3">
+                <p>An AI-powered, zero-lag video calling platform.</p>
+              </div>
+            </div>
+            <a href="#call"
+              ><button class="btn font-weight-bold pulse mb-2">
+                Try Now
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashed-bottom section">
+      <div class="container" id="intro">
+        <div class="row">
+          <div class="col">
+            <h1 class="title"><span>Using AI to Decrease Latency</span></h1>
+            <p>
+              Using recurrent neural autoencoders, Latent Space
+              <b> compresses audio streams </b>with embeddings specifically for
+              music, eliminating latency and allowing for
+              <b>smooth real-time virtual collaboration</b>.
+            </p>
+            <p>
+              Latent Space
+              <b> reduces audio payloads by 78%</b>, enabling musicians and
+              others to synchronize as closely as possible.
+            </p>
+            <div class="medium alert alert-info" role="alert">
+              <h3>
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                Autoencoders
+              </h3>
+              Autoencoders are like springs:<br />
+              <ol>
+                <li>they first compress the input,</li>
+                <li>
+                  then modify the compressed version (called the
+                  <b>latent space</b>),
+                </li>
+                <li>and then stretch the latent space back into the output.</li>
+              </ol>
+              Latent Space uses recurrent neural autoencoders (RAEs) to optimize
+              audio data transmission by domain&mdash;a novel approach to
+              communication.
+            </div>
+            <a href="#call"
+              ><button class="btn font-weight-bold mb-2">Get started</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashed-bottom section">
+      <div class="container advantages">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="title pb-3"><span>Technical Advantages</span></h1>
+          </div>
+          <div class="col-12">
+            <div class="pb-3">
+              <h2>
+                <i class="fas fa-volume-up"></i>&nbsp; Smart Audio Compression
+              </h2>
+              <ul>
+                <li>
+                  Uses RNAEs to compress audio into unstructured genre-based
+                  data.
+                </li>
+                <li>
+                  Transfers and then decodes the data back into audio, all with
+                  real-time client-focused architecture.
+                </li>
+              </ul>
+            </div>
+            <div class="pb-3">
+              <h2>
+                <i class="fas fa-tachometer-alt"></i>&nbsp; Decentralized Calls
+              </h2>
+              <ul>
+                <li>
+                  Peer-to-peer WebRTC tech means your data goes directly to the
+                  other person without a server, further lowering latency.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2><i class="fas fa-video"></i>&nbsp; Complete Privacy</h2>
+              <ul>
+                <li>Data never leaves the browser.</li>
+                <li>WebRTC end-to-end state of the art encryption.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container section pb-1" id="call">
+      <div class="alert alert-dark">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 col-lg-7">
+            <h1>
+              <b> Pick a name. </b>
+              <br />
+              <b>Share the URL.</b>
+            </h1>
+            <p class="mb-md-0 mb-3">Simple as that.</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-5">
+            <div class="input-group">
+              <input
+                autocomplete="off"
+                autocorrect="off"
+                autocapitalize="off"
+                spellcheck="false"
+                type="text"
+                id="call-id"
+                class="form-control inputText"
+                placeholder="Call ID"
+                aria-label="Call ID"
+              />
+              <div class="input-group-append">
+                <button
+                  class="btnInput input-group-text"
+                  onclick="{window.location.href = '/join/' + document.getElementById('call-id').value}"
+                >
+                  <i class="fas fa-phone-alt"></i>&nbsp; Call
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="mt-5 mb-5 container">
+      <div class="row justify-content-space-between">
+        <div class="col-12 col-md-6 order-2 text-center text-md-left">
+          &copy; 2020 Latent Space. All rights reserved.
+        </div>
+        <div
+          class="col-12 col-md-6 order-1 order-md-3 text-center text-md-right"
+        >
+          <a
+            href="http://github.com/MasonWang025/latent-space"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="color: #212529;"
+            ><i class="fab fa-github mr-1"></i><u>Github Repo</u></a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/home/hero.js"></script>
+    <script src="js/home/generateid.js"></script>
+
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/9d7bb7e31a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
